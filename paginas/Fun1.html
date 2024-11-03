@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura y Desempeño</title>
+    <link rel="stylesheet" href="../css/fun1.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="HisAndroid.html">Historia</a></li>
+        <li><a href="Fun1.html">Arquitectura y desempeño</a></li>
+        <li><a href="Fun2.html">Multitarea y control de concurrencia</a></li>
+        <li><a href="Fun3.html">Almacenaje y archivos</a></li>
+        <li><a href="Fun4.html">Redes y seguridad</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Arquitectura y Desempeño de Android</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Componentes Principales</h2>
+        <p>La arquitectura de Android está basada en Linux y está compuesta por varias capas que trabajan juntas para garantizar el rendimiento y la compatibilidad en una variedad de dispositivos móviles. Entre los componentes fundamentales se encuentran el <strong>kernel de Linux</strong>, las <strong>librerías nativas</strong>, el <strong>entorno de ejecución</strong> y la <strong>capa de aplicaciones</strong>, todos diseñados para ofrecer una plataforma segura y flexible.</p>
+        <!-- Espacio para una imagen de la arquitectura general de Android -->
+        <figure>
+            <img src="../img/fun1/android-arquitectura.jpg" alt="Arquitectura de Android">
+            <figcaption>Diagrama de la arquitectura de Android.</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Kernel de Linux</h2>
+        <p>El <strong>kernel de Linux</strong> es la base del sistema Android y gestiona recursos esenciales, como la <strong>CPU</strong>, la <strong>memoria</strong> y los <strong>dispositivos de hardware</strong>. Este núcleo actúa como un intermediario entre el hardware del dispositivo y el resto del sistema operativo, garantizando una comunicación efectiva y segura entre el software y el hardware. Además, proporciona seguridad mediante la gestión de permisos y aislamiento de procesos.</p>
+        <!-- Espacio para una imagen del kernel o diagrama de procesos -->
+        <figure>
+            <img src="../img/fun1/kernel de android.jpg" alt="Kernel de Android">
+            <figcaption>Kernel de Linux en Android y su funcionamiento.</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Gestión de Procesos</h2>
+        <p>El sistema de gestión de procesos en Android permite ejecutar múltiples aplicaciones simultáneamente, lo que se conoce como <strong>multitarea</strong>. Android organiza los procesos en diferentes estados (activo, en segundo plano, etc.) y utiliza un modelo de prioridad. De esta forma, el sistema puede liberar recursos al cerrar procesos en segundo plano cuando la memoria es limitada, optimizando así el uso del CPU y el consumo de batería.</p>
+        <p>Android asigna prioridad a los procesos de las aplicaciones en uso, mientras que aquellos en segundo plano son suspendidos o cerrados cuando es necesario, lo que permite una gestión eficiente y un rendimiento estable.</p>
+    </section>
+
+    <section>
+        <h2>Gestión de Memoria</h2>
+        <p>Para mantener el rendimiento, Android utiliza un <strong>sistema de recolección de basura</strong> (Garbage Collection), el cual libera automáticamente la memoria ocupada por objetos que ya no están en uso. Este sistema se complementa con la <strong>paginación</strong>, que permite a Android utilizar la memoria de manera eficiente, especialmente en dispositivos con recursos limitados.</p>
+        <p>Esta estrategia asegura que las aplicaciones en segundo plano se cierren cuando es necesario, manteniendo la memoria disponible para procesos más importantes y reduciendo el riesgo de ralentización.</p>
+    </section>
+
+    <section>
+        <h2>Entorno de Ejecución (ART)</h2>
+        <p>El entorno de ejecución en Android está basado en <strong>Android Runtime (ART)</strong>, una mejora del antiguo sistema Dalvik. ART convierte el código de las aplicaciones en instrucciones que el dispositivo puede ejecutar de manera eficiente, permitiendo un menor uso de memoria y un mejor rendimiento general. Además, ART permite que las aplicaciones se ejecuten con mayor rapidez y estabilidad en comparación con su predecesor.</p>
+        <p>La optimización de ART se centra en compilar las aplicaciones al instalarlas, lo que reduce el tiempo de inicio y mejora la experiencia del usuario.</p>
+    </section>
+
+    <section>
+        <h2>Desempeño y Optimización</h2>
+        <p>El desempeño en Android es optimizado constantemente mediante la gestión eficiente de recursos y procesos. Android está diseñado para funcionar en una amplia gama de dispositivos con distintas capacidades de hardware, adaptándose a las limitaciones de cada uno. El sistema monitorea continuamente el uso de la CPU y la memoria, ajustando los recursos en función de la carga de trabajo actual.</p>
+        <!-- Espacio para una imagen que represente la gestión de recursos en Android -->
+        <figure>
+            <img src="../img/fun1/optimizacion.png" alt="Desempeño en Android">
+            <figcaption>Gestión de recursos y desempeño en Android.</figcaption>
+        </figure>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 Introducción a Android</p>
+</footer>
+
+</body>
+</html>

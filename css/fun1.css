@@ -1,0 +1,119 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del cuerpo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #008080;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezado */
+header {
+    background: #006666;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+/* Contenido principal */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Estilo para las secciones */
+main section {
+    margin-bottom: 30px;
+}
+
+/* Títulos de las secciones */
+main h2 {
+    color: #008080;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos de párrafos */
+main p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Estilos de listas */
+main ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+/* Estilos de imágenes y figuras */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+figure img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figure figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
